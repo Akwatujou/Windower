@@ -1,0 +1,1 @@
+    legs={ name="Odyssean Cuisses", augments={'Attack+26','"Store TP"+7','CHR+15','Accuracy+2',}},

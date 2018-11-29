@@ -1,0 +1,17 @@
+sets.exported={
+    main="Raetic Algol +1",
+    sub="Utu Grip",
+    ammo="Ghastly Tathlum +1",
+    head={ name="Founder's Corona", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Magic dmg. taken -5%',}},
+    body="Ignominy Cuirass +2",
+    hands={ name="Founder's Gauntlets", augments={'STR+8','Attack+15','"Mag.Atk.Bns."+13','Phys. dmg. taken -3%',}},
+    legs="Heath. Flanchard",
+    feet={ name="Odyssean Greaves", augments={'CHR+7','Attack+17','Quadruple Attack +1','Accuracy+4 Attack+4',}},
+    neck="Deviant Necklace",
+    waist="Eschan Stone",
+    left_ear="Strophadic Earring",
+    right_ear="Hecate's Earring",
+    left_ring="Resonance Ring",
+    right_ring="Evanescence Ring",
+    back="Chuparrosa Mantle",
+}

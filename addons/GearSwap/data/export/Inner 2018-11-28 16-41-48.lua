@@ -1,0 +1,15 @@
+sets.exported={
+    main="Raetic Algol +1",
+    sub="Utu Grip",
+    ammo="Impatiens",
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    legs={ name="Odyssean Cuisses", augments={'Accuracy+28','"Fast Cast"+5','STR+10',}},
+    feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}},
+    neck="Deviant Necklace",
+    waist="Eschan Stone",
+    left_ear="Strophadic Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Kishar Ring",
+    right_ring="Rahab Ring",
+    back="Xucau Mantle",
+}

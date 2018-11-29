@@ -1,0 +1,18 @@
+<?xml version="1.1" ?>
+<settings>
+    <global>
+        <AutoDrop>false</AutoDrop>
+        <AutoStack>true</AutoStack>
+        <Delay>0</Delay>
+        <Drop>Warrior&apos;s Belt,Lizard Helm,Field Boots,Studded Trousers,Leather Bandana,Leather Shield,Cuir Trousers,Fisherman&apos;s Boots</Drop>
+        <Lot>Voidfoot: COR,Footshard: COR,Torsoshard: COR</Lot>
+        <Pass>Dark Card,Wind Card,Light Card</Pass>
+        <Verbose>false</Verbose>
+    </global>
+    <yoshimory>
+        <AutoDrop>true</AutoDrop>
+        <Drop>Platinum Ore,Lizard Helm,Durium Ore,Translucent Rock,Bizen-osafune,Fisherman&apos;s Boots,Behemoth Mantle,Elixir,Beak Mantle,Black Rock,Mythril Ore,Kitron,Pro-Ether +1,Ice Carol II,Mind Potion,Absorb-Attri,Phil. Stone,Purple Rock,Field Boots,Yellow Rock,White Rock,Comet,Aeroja,Coeurl Meat,Imperial Cermet,Foe Requiem VI,Darksteel Ore,Army&apos;s Paeon V,Ebony Log,Fire Carol II,Raptor Strap,Endark,Marid Mantle,Gain-VIT,X-Potion +2,Beech Log,Ram Horn,Strength Potion,Emperor Fish,Cuir Trousers,Kakka: Ichi,Army&apos;s Paeon,Persikos,Arbuda Grip,Fire V,Mahogany Log,Int. Potion,Boost-CHR,Hi-Elixir,Gain-STR,Holy II,Steel Ingot,Shell V,Aisha: Ichi,Studded Trousers,Aero V,Red Rock,Gain-AGI,Leather Shield,Earth Carol II,Coeurl Gorget,Animus Augeo,Army&apos;s Paeon VI,X-Potion +3,Ruszor Meat,Stoneja,Curaga,Animus Minuo,Crystal Petrifact,Enlight,Migawari: Ichi,Ace&apos;s Mail,Boost-AGI,Foe Requiem VII,Icarus Wing,Blizzaja,Demon Horn,Blizzard V,Thunder V,Hi-Potion +2,Dexterity Potion,Ram Skin,Baramnesia,Warrior&apos;s Belt,W. Spider&apos;s Web,Hi-Potion +3,Tiger Mantle,Khimaira Mane,Manticore Hide,Coeurl Mantle,Boost-STR,Gold Ore,Protect V,Wyvern Skin,Knight&apos;s Minne V,Leather Bandana,Agility Potion,Charisma Potion,Vitality Potion,Yurin: Ichi,Blue Rock,Curaga V,Regen IV,Pro-Ether,Mage&apos;s Ballad III,Green Rock,Mythril Ingot</Drop>
+        <Lot>Headshard: WAR,Legshard: COR,Voidtorso: COR,Voidfoot: COR,Voidhead: COR,Footshard: COR,Torsoshard: WAR,Torsoshard: BLU,Headshard: COR,Headshard: BLU,Torsoshard: COR,Handshard: COR,Voidleg: COR,Voidhand: COR</Lot>
+        <Pass>Heroism Aggregate,Light Card,Durium Ore,Dark Card,Black. I. Card,Darksteel Ore,Heroism Crystal,Rusted I. Card,Mythril Ore,Strength Potion,X-Potion +3,Vitality Potion,Wind Card,Blue Rock,Green Rock,Gold Ore,Kindred&apos;s Medal,Dexterity Potion,Bizen-osafune,Beastmen&apos;s Medal</Pass>
+    </yoshimory>
+</settings>

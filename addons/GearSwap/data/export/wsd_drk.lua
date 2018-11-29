@@ -1,0 +1,15 @@
+sets.exported={
+    ammo="Knobkierrie",
+    head={ name="Valorous Mask", augments={'Attack+1','Weapon skill damage +5%','DEX+9',}},
+    body="Ignominy Cuirass +2",
+    hands={ name="Valorous Mitts", augments={'Attack+2','Weapon skill damage +5%',}},
+    legs={ name="Odyssean Cuisses", augments={'AGI+6','Spell interruption rate down -8%','Weapon skill damage +7%','Accuracy+6 Attack+6',}},
+    feet="Sulev. Leggings +2",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Regal Ring",
+    right_ring="Karieyh Ring",
+    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+}

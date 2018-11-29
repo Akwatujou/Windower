@@ -1,0 +1,17 @@
+sets.exported={
+    main="Raetic Algol +1",
+    sub="Utu Grip",
+    ammo="Ginsen",
+    head="Flam. Zucchetto +2",
+    body="Councilor's Garb",
+    hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
+    legs={ name="Odyssean Cuisses", augments={'Accuracy+28','"Fast Cast"+5','STR+10',}},
+    feet="Sulev. Leggings +2",
+    neck="Abyssal Beads +2",
+    waist="Ioskeha Belt",
+    left_ear="Telos Earring",
+    right_ear="Brutal Earring",
+    left_ring="Defending Ring",
+    right_ring="Warp Ring",
+    back="Aptitude Mantle +1",
+}
