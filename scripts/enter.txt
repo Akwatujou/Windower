@@ -1,0 +1,9 @@
+send @all input /targetnpc
+
+pause .3
+
+send @all setkey enter down
+
+pause .3
+
+send @all setkey enter up

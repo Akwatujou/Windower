@@ -1,0 +1,34 @@
+bind NUMPAD1 input /ma "Cure II" <stal>
+bind NUMPAD2 input /ma "Cure III" <stal>
+bind NUMPAD3 input /ma "Cure IV" <stal>
+	
+bind ^NUMPAD1 input /ma "Curaga II" <stal>
+bind ^NUMPAD2 input /ma "Curaga III" <stal>
+bind ^NUMPAD3 input /ma "Curaga IV" <stal>
+	
+bind !NUMPAD1 input /ma "Regen IV" <stal>
+bind !NUMPAD2 input /ja "Martyr" <stal>
+bind !NUMPAD3 input /ja "Devotion" <stal>
+zsd
+bind NUMPAD4 input /ma "Paralyna" <stal>
+bind NUMPAD5 input /ma "Silena" <stal>
+bind NUMPAD6 input /ma "Erase"<stal>
+	
+bind ^NUMPAD4 input /ma "Cursna" <stal>
+bind ^NUMPAD5 input /ma "Stona" <stal>
+bind ^NUMPAD6 input /ma "Poisona" <stal>
+	
+bind !NUMPAD4 input /ma "Blindna" <stal>
+bind !NUMPAD6 input /ma "" <me>
+	
+bind NUMPAD7 input /ma "Stoneskin" <me>
+bind NUMPAD8 input /ma "Protectra V" <me>
+bind NUMPAD9 input /ma "Shellra V" <me>
+	
+bind ^NUMPAD7 input /ja "Divine Caress" <me>
+bind ^NUMPAD8 input /ja "Divine Seal" <me>
+bind ^NUMPAD9 input /ja "Sacrosanctity" <me>
+	
+bind !NUMPAD7 input /ma "Arise" <stal>
+bind !NUMPAD8 input /ma "Raise" <stal>
+bind !NUMPAD9 input /ma "Raise II" <stal>

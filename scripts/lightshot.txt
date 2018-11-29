@@ -1,0 +1,2 @@
+wait 12
+input /ja "Light Shot" <t>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <autoload>
+    <addon>plugin_manager</addon>
+    <addon>Omen</addon>
+    <addon>send</addon>
+  </autoload>
+  <profile name="">
+    <consolekey>Insert</consolekey>
+    <windowmode>Window</windowmode>
+    <width>1792</width>
+    <height>1008</height>
+    <mipmaplevel>1</mipmaplevel>
+    <uiscale>0.9</uiscale>
+    <bumpmapping>true</bumpmapping>
+    <sound>false</sound>
+    <alwaysplaysound>false</alwaysplaysound>
+    <alwaysenablegamepad>false</alwaysenablegamepad>
+    <allowwinkey>true</allowwinkey>
+  </profile>
+  <profile name="pepito">
+    <consolekey>Insert</consolekey>
+    <width>600</width>
+    <height>340</height>
+    <uiscale>1</uiscale>
+  </profile>
+</settings>

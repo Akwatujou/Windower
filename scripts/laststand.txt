@@ -1,0 +1,2 @@
+pause 4
+input /ws "Leaden Salute" <t>
