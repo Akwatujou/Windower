@@ -34,18 +34,19 @@
 ----    Checks for main job, level, superior level, and gender/race
 -----------------------------------------------------------------------------------
 function check_wearable(item_id)
-    if not item_id or item_id == 0 then -- 0 codes for an empty slot, but Arcon will probably make it nil at some point
+   if not item_id or item_id == 0 then -- 0 codes for an empty slot, but Arcon will probably make it nil at some point
     elseif not res.items[item_id] then
         msg.debugging("Item "..item_id.." has not been added to resources yet.")
     elseif not res.items[item_id].jobs then -- Make sure item can be equipped by specific jobs (unlike pearlsacks).
-        --msg.debugging('GearSwap (Debug Mode): Item '..(res.items[item_id][language] or item_id)..' does not have a jobs field in the resources.')
+        msg.debugging('GearSwap (Debug Mode): Item '..(res.items[item_id][language] or item_id)..' does not have a jobs field in the resources.')
     elseif not res.items[item_id].slots then
         -- Item is not equippable
     else
         return (res.items[item_id].jobs[player.main_job_id]) and (res.items[item_id].level<=player.jobs[res.jobs[player.main_job_id].ens]) and (res.items[item_id].races[player.race_id]) and
             (player.superior_level >= (res.items[item_id].superior_level or 0))
-    end
-    return false
+   end
+   return false
+	
 end
 
 -----------------------------------------------------------------------------------

@@ -170,9 +170,10 @@ local function trade_cells()
         trade['Number of Items'] = n
         conditions['trade'] = false
         packets.inject(trade)
-        if leader() then
-            coroutine.schedule(poke_rift, 2)
-        end
+		
+       --if leader() then  
+		coroutine.schedule(poke_rift, 2)  
+       --end
     end
 end
 

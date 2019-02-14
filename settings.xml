@@ -4,6 +4,8 @@
     <addon>plugin_manager</addon>
     <addon>Omen</addon>
     <addon>send</addon>
+    <addon>zonetimer</addon>
+    <addon>Bonanza</addon>
   </autoload>
   <profile name="">
     <consolekey>Insert</consolekey>

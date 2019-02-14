@@ -1,0 +1,17 @@
+sets.exported={
+    main="Apocalypse",
+    sub="Utu Grip",
+    ammo="Ginsen",
+    head="Flam. Zucchetto +2",
+    body={ name="Argosy Hauberk +1", augments={'STR+12','Attack+20','"Store TP"+6',}},
+    hands={ name="Emi. Gauntlets +1", augments={'HP+65','DEX+12','Accuracy+20',}},
+    legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}},
+    feet="Flam. Gambieras +2",
+    neck="Abyssal Beads +2",
+    waist="Ioskeha Belt",
+    left_ear="Odnowa Earring +1",
+    right_ear="Brutal Earring",
+    left_ring="Defending Ring",
+    right_ring="Flamma Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+}

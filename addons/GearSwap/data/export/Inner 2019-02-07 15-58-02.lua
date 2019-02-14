@@ -1,0 +1,17 @@
+sets.exported={
+    main="Apocalypse",
+    sub="Utu Grip",
+    ammo="Ghastly Tathlum +1",
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    body={ name="Carm. Sc. Mail +1", augments={'MP+80','INT+12','MND+12',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+    legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}},
+    feet="Sulev. Leggings +2",
+    neck="Deviant Necklace",
+    waist="Eschan Stone",
+    left_ear="Odnowa Earring +1",
+    right_ear="Hecate's Earring",
+    left_ring="Defending Ring",
+    right_ring="Evanescence Ring",
+    back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +24','Weapon skill damage +4%',}},
+}

@@ -1,0 +1,17 @@
+sets.exported={
+    main="Montante +1",
+    sub="Utu Grip",
+    ammo="Ginsen",
+    head={ name="Argosy Celata +1", augments={'DEX+12','Accuracy+20','"Dbl.Atk."+3',}},
+    body={ name="Valorous Mail", augments={'"Store TP"+5','Accuracy+4','Attack+13',}},
+    hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
+    legs={ name="Odyssean Cuisses", augments={'Attack+26','"Store TP"+7','CHR+15','Accuracy+2',}},
+    feet={ name="Argosy Sollerets +1", augments={'HP+65','"Dbl.Atk."+3','"Store TP"+5',}},
+    neck="Abyssal Beads +2",
+    waist="Windbuffet Belt +1",
+    left_ear="Odnowa Earring +1",
+    right_ear="Telos Earring",
+    left_ring="Defending Ring",
+    right_ring="Petrov Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+}

@@ -1,0 +1,17 @@
+sets.exported={
+    main="Twashtar",
+    sub="Aeneas",
+    ammo="Yamarang",
+    head={ name="Dampening Tam", augments={'DEX+1','Quadruple Attack +2',}},
+    body="Councilor's Garb",
+    hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
+    legs={ name="Plun. Culottes +3", augments={'Enhances "Feint" effect',}},
+    feet="Jute Boots +1",
+    neck="Asn. Gorget +2",
+    waist="Windbuffet Belt +1",
+    left_ear="Telos Earring",
+    right_ear="Sherida Earring",
+    left_ring="Regal Ring",
+    right_ring="Warp Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
+}

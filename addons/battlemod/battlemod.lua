@@ -1,5 +1,6 @@
 require 'tables'
 require 'sets'
+require 'maths'
 file = require 'files'
 config = require 'config'
 require 'strings'
@@ -12,10 +13,25 @@ require 'generic_helpers'
 require 'parse_action_packet'
 require 'statics'
 
-_addon.version = '3.24'
+_addon.version = '3.23'
 _addon.name = 'BattleMod'
 _addon.author = 'Byrth, maintainer: SnickySnacks'
 _addon.commands = {'bm','battlemod'}
+
+local compteur = 0
+local compteur_nq = 0
+local c_nq = 0
+local compteur_hq = 0
+local c_hq = 0
+local compteur_break = 0
+local c_break = 0
+local compteur_hq1 = 0
+local c_hq1 = 0
+local compteur_hq2 = 0
+local c_hq2 = 0
+local compteur_hq3 = 0
+local c_hq3 = 0
+
 
 windower.register_event('load',function()
     if debugging then windower.debug('load') end
@@ -317,8 +333,9 @@ windower.register_event('incoming chunk',function (id,original,modified,is_injec
                     skill = 'like level '..am.param_1..' ('..ratings_arr[am.param_2-63]..')'
                 end
             end
+            
             local outstr = (res.action_messages[am.message_id][language]
-                :gsub('$\123actor\125',color_it((actor.name or '') .. (actor.owner_name or ""),color_arr[actor.owner or actor.type]))
+                :gsub('$\123actor\125',color_it(actor.name or '',color_arr[actor.owner or actor.type]))
                 :gsub('$\123status\125',status or '')
                 :gsub('$\123item\125',color_it(item or '',color_arr.itemcol))
                 :gsub('$\123target\125',color_it(target.name or '',color_arr[target.owner or target.type]))
@@ -346,26 +363,47 @@ windower.register_event('incoming chunk',function (id,original,modified,is_injec
         if windower.ffxi.get_player().id == original:unpack("I",5) or windower.ffxi.get_mob_by_target('t') and windower.ffxi.get_mob_by_target('t').id == original:unpack("I",5) then
             local crafter_name = (windower.ffxi.get_player().id == original:unpack("I",5) and windower.ffxi.get_player().name) or windower.ffxi.get_mob_by_target('t').name
             local result = original:byte(13)
-            if result == 0 then
-                windower.add_to_chat(8,' ------------- NQ Synthesis ('..crafter_name..') -------------')
-            elseif result == 1 then
-                windower.add_to_chat(8,' ---------------- Break ('..crafter_name..') -----------------')
+            compteur = compteur + 1
+			if result == 0 then			
+                compteur_nq = compteur_nq + 1
+				windower.add_to_chat(8,' ------------- NQ Synthesis ('..crafter_name..') -------------')
+			elseif result == 1 then
+				compteur_break = compteur_break + 1
+				windower.add_to_chat(8,' ---------------- Break ('..crafter_name..') -----------------')
             elseif result == 2 then
-                windower.add_to_chat(8,' ------------- HQ Synthesis ('..crafter_name..') -------------')
+			    compteur_hq = compteur_hq + 1			
+				windower.add_to_chat(8,' ------------- HQ Synthesis ('..crafter_name..') -------------')
             else
                 windower.add_to_chat(8,'Craftmod: Unhandled result '..tostring(result))
             end
-        end
+			c_nq = (100*compteur_nq)/compteur
+			c_nq = math.round(c_nq,2)
+			c_break = (100*compteur_break)/compteur
+			c_break = math.round(c_break,2)
+			c_hq = (100*compteur_hq)/compteur
+			c_hq = math.round(c_hq,2)
+		    windower.add_to_chat(8,'stats : HQ('..tostring(c_hq)..'%)/NQ('..tostring(c_nq)..'%)/BREAK('..tostring(c_break)..'%)/TOTAL'..tostring(compteur)..')')
+		end
     elseif id == 0x06F then
         if original:byte(5) == 0 then
             local result = original:byte(6)
             if result == 1 then
+			    compteur_hq1 = compteur_hq1 + 1
                 windower.add_to_chat(8,' -------------- HQ Tier 1! --------------')
             elseif result == 2 then
+			    compteur_hq2 = compteur_hq2 + 1
                 windower.add_to_chat(8,' -------------- HQ Tier 2! --------------')
             elseif result == 3 then
+			    compteur_hq3 = compteur_hq3 + 1
                 windower.add_to_chat(8,' -------------- HQ Tier 3! --------------')
             end
+		c_hq1 = (100*compteur_hq1)/compteur
+		c_hq1 = math.round(c_hq1,2)
+		c_hq2 = (100*compteur_hq2)/compteur
+		c_hq2 = math.round(c_hq2,2)
+		c_hq3 = (100*compteur_hq3)/compteur
+		c_hq3 = math.round(c_hq3,2)
+		windower.add_to_chat(8,'stats : HQ1('..tostring(c_hq1)..'%)/HQ2('..tostring(c_hq2)..'%)/HQ3('..tostring(c_hq3)..'%)')
         end
         
     ------------- JOB INFO ----------------

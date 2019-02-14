@@ -1,0 +1,18 @@
+sets.exported={
+    main="Hepatizon Rapier",
+    sub="Blurred Knife +1",
+    range="Molybdosis",
+    ammo="Chrono Bullet",
+    head="Oshosi Mask",
+    body={ name="Herculean Vest", augments={'"Mag.Atk.Bns."+21','DEX+1','Accuracy+3 Attack+3','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+    hands={ name="Lanun Gants +1", augments={'Enhances "Fold" effect',}},
+    legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}},
+    feet="Ahosi Leggings",
+    neck="Iskur Gorget",
+    waist="Flume Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Telos Earring",
+    left_ring="Ilabrat Ring",
+    right_ring="Regal Ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
+}

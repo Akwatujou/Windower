@@ -13,6 +13,7 @@
     <global>
         <UpdateFrequency>0.5</UpdateFrequency>
         <bgtransparency>200</bgtransparency>
+        <combinepets>true</combinepets>
         <display>
             <bg>
                 <alpha>200</alpha>
@@ -60,6 +61,7 @@
         <resetfilters>true</resetfilters>
         <sbcolor>204</sbcolor>
         <showallidps>true</showallidps>
+        <showfellow>true</showfellow>
         <visible>true</visible>
     </global>
     <holybatmanbbq>

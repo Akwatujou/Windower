@@ -10,7 +10,9 @@
 
 wait 5;
 load LuaCore;
+lua load Bonanza;
 lua load Omen;
 lua load plugin_manager;
 lua load send;
+lua load zonetimer;
 exec init.txt;

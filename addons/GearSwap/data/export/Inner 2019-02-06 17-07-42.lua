@@ -1,0 +1,17 @@
+sets.exported={
+    main="Eletta Sword",
+    sub="Eletta Knife",
+    range="Fomalhaut",
+    head={ name="Lanun Tricorne +1", augments={'Enhances "Winning Streak" effect',}},
+    body="Oshosi Vest",
+    hands={ name="Lanun Gants +1", augments={'Enhances "Fold" effect',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','STR+1','"Mag.Atk.Bns."+14',}},
+    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
+    neck="Iskur Gorget",
+    waist="Windbuffet Belt +1",
+    left_ear="Suppanomimi",
+    right_ear="Telos Earring",
+    left_ring="Regal Ring",
+    right_ring="Warp Ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
+}

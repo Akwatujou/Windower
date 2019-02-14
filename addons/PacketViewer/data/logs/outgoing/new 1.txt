@@ -1,0 +1,16 @@
+50 04 36 0D 3C 0E 08 3A
+
+0x050 > 80 ID = equip
+size 8 bytes
+
+3C > 60 rahab ring
+0E > 14 right ring
+08 > 08 wardrobe
+3A ?
+
+50 04 46 0F 2D 0C 08 3A
+
+2D > 45 Ishvara earring
+0C > 12 right ring
+08 > 08 wardrobe
+3A ?

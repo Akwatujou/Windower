@@ -1,0 +1,17 @@
+sets.exported={
+    main="Aeneas",
+    sub={ name="Taming Sari", augments={'STR+6','DEX+9','DMG:+9',}},
+    ammo="Impatiens",
+    head="Meghanada Visor +2",
+    body={ name="Samnuha Coat", augments={'Mag. Acc.+10','"Mag.Atk.Bns."+9','"Fast Cast"+2',}},
+    hands="Meg. Gloves +2",
+    legs={ name="Rawhide Trousers", augments={'MP+50','"Fast Cast"+5','"Refresh"+1',}},
+    feet="Ahosi Leggings",
+    neck="Magoraga Beads",
+    waist="Flume Belt",
+    left_ear="Eabani Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Lebeche Ring",
+    right_ring="Rahab Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Phys. dmg. taken-10%',}},
+}

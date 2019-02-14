@@ -55,7 +55,17 @@
             </text>
         </display>
     </global>
+    <batmom>
+        <ShowTemporary>false</ShowTemporary>
+        <display>
+            <pos>
+                <x>1450</x>
+                <y>711</y>
+            </pos>
+        </display>
+    </batmom>
     <inner>
+        <ShowTemporary>false</ShowTemporary>
         <display>
             <pos>
                 <x>1542.7557373047</x>

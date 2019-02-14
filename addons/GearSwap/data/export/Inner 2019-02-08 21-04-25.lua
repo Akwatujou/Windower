@@ -1,0 +1,16 @@
+sets.exported={
+    main="Apocalypse",
+    sub="Utu Grip",
+    ammo="Ginsen",
+    body={ name="Carm. Sc. Mail +1", augments={'MP+80','INT+12','MND+12',}},
+    hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
+    legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}},
+    feet="Sulev. Leggings +2",
+    neck="Abyssal Beads +2",
+    waist="Ioskeha Belt",
+    left_ear="Odnowa Earring +1",
+    right_ear="Telos Earring",
+    left_ring="Defending Ring",
+    right_ring="Warp Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+}

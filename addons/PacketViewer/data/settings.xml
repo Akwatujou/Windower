@@ -90,4 +90,12 @@
             </text>
         </tracker>
     </global>
+    <inner>
+        <tracker>
+            <pos>
+                <x>188</x>
+                <y>492</y>
+            </pos>
+        </tracker>
+    </inner>
 </settings>

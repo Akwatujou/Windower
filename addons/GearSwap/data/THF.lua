@@ -45,14 +45,21 @@ function job_setup()
 	send_command('bind ^NUMPAD8 input /ja "Hide" <me>')
 	send_command('bind ^NUMPAD9 input /ja "Perfect Dodge" <me>')
 	
-	send_command('bind !NUMPAD1 input /ja "Provoke" <t>')
+	
+	
+	if player.sub_job == 'WAR' then
+     send_command('bind !NUMPAD1 input /ja "Provoke" <t>')
 	send_command('bind !NUMPAD2 input /ja "Berserk" <me>')
 	send_command('bind !NUMPAD3 input /ja "Warcry" <me>')
 	
 	send_command('bind !NUMPAD4 input /ja "Agressor" <me>')
 	send_command('bind !NUMPAD5 input /ja "Defender" <me>')
 	send_command('bind !NUMPAD6 input /ja "Warcry" <me>')
-	
+    end
+	if player.sub_job == 'NIN' then
+	send_command('bind !NUMPAD1 input /ma "Utsusemi: Ichi" <me>')
+	send_command('bind !NUMPAD2 input /ma "Utsusemi: Ni" <me>')
+	end
     -- For th_action_check():
     -- JA IDs for actions that always have TH: Provoke, Animated Flourish
     info.default_ja_ids = S{35, 204}
@@ -88,28 +95,43 @@ function init_gear_sets()
 	sets.TreasureHunter = {hands="Plunderer's Armlets +1",feet="Skulk. Poulaines +1",waist="Chaac Belt",}
 	moonshade_WS = S{"Rudra's Storm", "Evisceration", "Shark Bite", "Mandalic Stab", "Exenterator", "Savage Blade", "Vorpal Blade", "Requiescat", "Sanguine Blade"}
 	
-	sets.engaged =   
+	sets.engaged=   
 	{
     ammo="Ginsen",
-    head="Adhemar Bonnet +1",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body="Pillager's Vest +3",
-    hands="Adhemar Wrist. +1",
+    hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
     legs="Meg. Chausses +2",
-    feet="Plun. Poulaines +3",
+    feet={ name="Herculean Boots", augments={'Attack+27','"Triple Atk."+4','DEX+9',}},
+    neck="Asn. Gorget +2",
+    waist="Windbuffet Belt +1",
+    left_ear="Telos Earring",
+    right_ear="Sherida Earring",
+    left_ring="Epona's Ring",
+    right_ring="Petrov Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Phys. dmg. taken-10%',}},
+	}
+   sets.engaged.HighAcc=   
+	{
+    ammo="Yamarang",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body="Pillager's Vest +3",
+    hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+    legs="Meg. Chausses +2",
+    feet={ name="Plun. Poulaines +3", augments={'Enhances "Assassin\'s Charge" effect',}},
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
     left_ear="Telos Earring",
     right_ear="Sherida Earring",
-    left_ring="Epona's Ring",
-    right_ring="Hetairoi Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Damage taken-5%',}},
+    left_ring="Ilabrat Ring",
+    right_ring="Regal Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Phys. dmg. taken-10%',}},
 	}
-   
    sets.precast.WS  = 
    {
     ammo="Jukukik Feather",
     head="Pill. Bonnet +3",
-    body="Herculean Vest",
+    body="Plunderer's Vest +3",
     hands="Meg. Gloves +2",
     legs="Plun. Culottes +3",
     feet="Lustra. Leggings +1",
@@ -121,7 +143,22 @@ function init_gear_sets()
     right_ring="Ilabrat Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
-
+	sets.precast.WS['Aeolian Edge'] = {
+    ammo="Seeth. Bomblet +1",
+    head="Pill. Bonnet +3",
+    body={ name="Herculean Vest", augments={'"Mag.Atk.Bns."+21','DEX+1','Accuracy+3 Attack+3','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','STR+1','"Mag.Atk.Bns."+14',}},
+    feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+10','Weapon skill damage +3%',}},
+    neck="Baetyl Pendant",
+    waist="Eschan Stone",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Friomisi Earring",
+    left_ring="Dingir Ring",
+    right_ring="Karieyh Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
+	
 	sets.precast.WS.SA =
 	{
 	ammo="Yetshila +1",
@@ -155,7 +192,51 @@ function init_gear_sets()
     right_ring="Ilabrat Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
-	
+	sets.precast.FC ={
+	ammo="Impatiens",
+    head="Meghanada Visor +2",
+    body={ name="Samnuha Coat", augments={'Mag. Acc.+10','"Mag.Atk.Bns."+9','"Fast Cast"+2',}},
+    hands="Meg. Gloves +2",
+    legs={ name="Rawhide Trousers", augments={'MP+50','"Fast Cast"+5','"Refresh"+1',}},
+    feet="Ahosi Leggings",
+    neck="Magoraga Beads",
+    waist="Flume Belt",
+    left_ear="Eabani Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Lebeche Ring",
+    right_ring="Rahab Ring",	
+	}
+sets.idle={
+    ammo="Staunch Tathlum",
+    head="Pill. Bonnet +3",
+    body={ name="Plunderer's Vest +3", augments={'Enhances "Ambush" effect',}},
+    hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+    legs={ name="Plun. Culottes +3", augments={'Enhances "Feint" effect',}},
+    feet="Jute Boots +1",
+    neck="Twilight Torque",
+    waist="Flume Belt",
+    left_ear="Telos Earring",
+    right_ear="Odnowa Earring +1",
+    left_ring="Archon Ring",
+    right_ring="Defending Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
+}
+	sets.idle.Town ={
+    ammo="Yamarang",
+    head={ name="Dampening Tam", augments={'DEX+1','Quadruple Attack +2',}},
+    body="Councilor's Garb",
+    hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
+    legs={ name="Plun. Culottes +3", augments={'Enhances "Feint" effect',}},
+    feet="Jute Boots +1",
+    neck="Asn. Gorget +2",
+    waist="Windbuffet Belt +1",
+    left_ear="Telos Earring",
+    right_ear="Sherida Earring",
+    left_ring="Regal Ring",
+    right_ring="Warp Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
+}
+    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads"})
 end
 
 

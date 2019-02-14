@@ -5,6 +5,6 @@
         <turbo>false</turbo>
     </global>
     <inner>
-        <blacklist>oracle&apos;s drink,primeval brew,mollifier,radialens,sprinter&apos;s drink,healing salve ii,mana mist,mana powder,lucid ether i,lucid ether ii,assassin&apos;s drink,healing salve i,clear salve ii,clear salve i,lucid ether iii</blacklist>
+        <blacklist>oracle&apos;s drink,primeval brew,mollifier,lucid ether i,sprinter&apos;s drink,healing salve ii,clear salve i,mana powder,mana mist,lucid ether ii,clear salve ii,healing salve i,assassin&apos;s drink,lucid ether iii</blacklist>
     </inner>
 </settings>

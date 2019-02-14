@@ -4,9 +4,6 @@
         <autodecline>false</autodecline>
         <blacklist />
         <mode>whitelist</mode>
-        <whitelist />
+        <whitelist>Surphy,Psylo,Noirot,Kaliana,Marrye,Myasasa,Spikedelsol,Mikawaii,Valeena,Doryl,Tafari,Khalista,Raindeath,Annoulita,Akivatoo</whitelist>
     </global>
-    <inner>
-        <whitelist>Mikawaii,Psylo,Kaliana,Akivatoo,Marrye,Myasasa,Spikedelsol,Annoulita,Raindeath,Khalista,Tafari,Doryl,Valeena,Surphy,Noirot</whitelist>
-    </inner>
 </settings>

@@ -2,10 +2,13 @@
 <settings>
     <global>
         <autoupdate>false</autoupdate>
+        <batmom>
+
+        </batmom>
         <blinking>
             <all>
                 <always>false</always>
-                <combat>true</combat>
+                <combat>false</combat>
                 <target>false</target>
             </all>
             <follow>

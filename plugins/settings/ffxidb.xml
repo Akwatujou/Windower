@@ -1,7 +1,7 @@
 <settings>
     <global>
-        <X>0</X>
-        <Y>0</Y>
+        <X>100</X>
+        <Y>100</Y>
         <Zoom>100</Zoom>
         <Opacity>75</Opacity>
         <ShowPC>true</ShowPC>
@@ -9,7 +9,7 @@
         <ShowMob>true</ShowMob>
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
-        <Ranges></Ranges>
+        <Ranges />
     </global>
     <Inner>
         <X>1355</X>
@@ -21,4 +21,7 @@
         <X>1461</X>
         <Y>574</Y>
     </Holybatmanbbq>
+    <Batmom>
+        <Opacity>100</Opacity>
+    </Batmom>
 </settings>

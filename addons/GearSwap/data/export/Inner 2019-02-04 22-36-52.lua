@@ -1,0 +1,18 @@
+sets.exported={
+    main="Eletta Sword",
+    sub="Eletta Knife",
+    range="Molybdosis",
+    ammo="Chrono Bullet",
+    head="Pixie Hairpin +1",
+    body="Oshosi Vest",
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','STR+1','"Mag.Atk.Bns."+14',}},
+    feet="Ahosi Leggings",
+    neck="Sanctity Necklace",
+    waist="Flume Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Friomisi Earring",
+    left_ring="Archon Ring",
+    right_ring="Regal Ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
+}

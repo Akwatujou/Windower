@@ -1,0 +1,17 @@
+sets.exported={
+    main="Twashtar",
+    sub="Aeneas",
+    ammo="Seeth. Bomblet +1",
+    head="Pill. Bonnet +3",
+    body={ name="Herculean Vest", augments={'"Mag.Atk.Bns."+21','DEX+1','Accuracy+3 Attack+3','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','STR+1','"Mag.Atk.Bns."+14',}},
+    feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+10','Weapon skill damage +3%',}},
+    neck="Baetyl Pendant",
+    waist="Eschan Stone",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Friomisi Earring",
+    left_ring="Dingir Ring",
+    right_ring="Karieyh Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
+}

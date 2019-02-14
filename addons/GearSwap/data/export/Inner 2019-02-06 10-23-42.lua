@@ -1,0 +1,17 @@
+sets.exported={
+    main="Twashtar",
+    sub="Aeneas",
+    ammo="Staunch Tathlum",
+    head="Pill. Bonnet +3",
+    body={ name="Plunderer's Vest +3", augments={'Enhances "Ambush" effect',}},
+    hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+    legs={ name="Plun. Culottes +3", augments={'Enhances "Feint" effect',}},
+    feet="Jute Boots +1",
+    neck="Twilight Torque",
+    waist="Flume Belt",
+    left_ear="Telos Earring",
+    right_ear="Odnowa Earring +1",
+    left_ring="Archon Ring",
+    right_ring="Defending Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
+}
